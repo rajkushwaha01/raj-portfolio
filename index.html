@@ -1,0 +1,1499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Raj Kushwaha | DevOps Engineer & Web Developer</title>
+
+    <meta name="description"
+          content="Raj Kushwaha's portfolio showcasing DevOps, AWS Cloud, CI/CD, Docker, Kubernetes, automation and website development projects.">
+
+    <meta name="keywords"
+          content="Raj Kushwaha, DevOps Engineer, AWS, Docker, Kubernetes, Jenkins, CI/CD, Web Developer">
+
+    <meta name="author" content="Raj Kushwaha">
+    <meta name="theme-color" content="#080b14">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+    <!-- Background -->
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="navbar container">
+
+            <a href="#home" class="logo">
+                <span class="logo-bracket">&lt;</span>
+                Raj<span class="accent-text">Kumar</span>
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="navMenu"
+            >
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#contact" class="nav-link nav-contact">Contact Me</a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero section" id="home">
+            <div class="container hero-grid">
+
+                <div class="hero-content reveal">
+
+                    <div class="availability">
+                        <span class="status-dot"></span>
+                        Open to Opportunities
+                    </div>
+
+                    <p class="hero-greeting">HELLO, I'M</p>
+
+                    <h1>
+                        Raj Kushwaha
+                        <br>
+                        <span class="gradient-text">DevOps Engineer</span>
+                    </h1>
+
+                    <h2 class="hero-subtitle">
+                        Cloud Automation
+                        <span class="accent-text">&</span>
+                        Web Development
+                    </h2>
+
+                    <p class="hero-description">
+                        I build, automate, deploy and monitor applications
+                        using cloud technologies and DevOps practices.
+                        I also create modern, responsive websites for
+                        individuals and businesses.
+                    </p>
+
+                    <div class="hero-tags">
+                        <span><i class="fa-brands fa-aws"></i> AWS</span>
+                        <span><i class="fa-brands fa-docker"></i> Docker</span>
+                        <span><i class="fa-solid fa-gears"></i> CI/CD</span>
+                        <span><i class="fa-brands fa-linux"></i> Linux</span>
+                    </div>
+
+                    <div class="hero-buttons">
+
+                        <a href="#projects" class="btn btn-primary">
+                            Explore My Projects
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                        <a
+                            href="assets/Raj-Kumar-Resume.pdf"
+                            class="btn btn-secondary"
+                            download
+                        >
+                            <i class="fa-solid fa-download"></i>
+                            Download Resume
+                        </a>
+
+                    </div>
+
+                    <div class="social-links">
+
+                        <a
+                            href="https://github.com/rajkushwaha01"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="GitHub"
+                            title="GitHub"
+                        >
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+
+                        <!-- Replace this with your exact LinkedIn profile URL -->
+                        <a
+                            href="https://www.linkedin.com/in/raj-kushwahaa/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="LinkedIn"
+                            title="LinkedIn"
+                        >
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                        <a
+                            href="mailto:rajkush018a@gmail.com"
+                            aria-label="Email"
+                            title="Email"
+                        >
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Profile Card -->
+                <div class="hero-visual reveal">
+
+                    <div class="orbit orbit-one"></div>
+                    <div class="orbit orbit-two"></div>
+
+                    <div class="profile-card">
+
+                        <div class="profile-card-top">
+                            <span class="window-dot red"></span>
+                            <span class="window-dot yellow"></span>
+                            <span class="window-dot green"></span>
+
+                            <span class="terminal-title">
+                                raj@devops:~
+                            </span>
+                        </div>
+
+                        <div class="profile-image-wrapper">
+                            <img
+                                src="assets/images/raj-profile.jpeg"
+                                alt="Raj Kushwaha - DevOps Engineer"
+                                class="profile-image"
+                                id="profileImage"
+                            >
+
+                            <div
+                                class="profile-fallback"
+                                id="profileFallback"
+                                hidden
+                            >
+                                RK
+                            </div>
+                        </div>
+
+                        <div class="profile-info">
+                            <h3>Raj Kushwaha</h3>
+                            <p>DevOps Engineer & Web Developer</p>
+
+                            <div class="profile-location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Gurugram, India
+                            </div>
+                        </div>
+
+                        <div class="terminal-box">
+                            <p>
+                                <span class="terminal-green">raj@devops</span>
+                                <span class="terminal-blue">~</span>
+                                $ whoami
+                            </p>
+
+                            <p class="terminal-output">
+                                Cloud & DevOps Enthusiast
+                            </p>
+
+                            <p>
+                                <span class="terminal-green">raj@devops</span>
+                                <span class="terminal-blue">~</span>
+                                $ status
+                            </p>
+
+                            <p class="terminal-output">
+                                Learning. Building. Automating.
+                            </p>
+
+                            <span class="terminal-cursor">▋</span>
+                        </div>
+
+                    </div>
+
+                    <div class="floating-badge badge-aws">
+                        <i class="fa-brands fa-aws"></i>
+                        <span>AWS Cloud</span>
+                    </div>
+
+                    <div class="floating-badge badge-docker">
+                        <i class="fa-brands fa-docker"></i>
+                        <span>Docker</span>
+                    </div>
+
+                    <div class="floating-badge badge-k8s">
+                        <i class="fa-solid fa-dharmachakra"></i>
+                        <span>Kubernetes</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <a href="#about" class="scroll-indicator">
+                <span>Scroll to explore</span>
+                <i class="fa-solid fa-arrow-down"></i>
+            </a>
+
+        </section>
+
+
+        <!-- About Section -->
+        <section class="section" id="about">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="section-label">ABOUT ME</span>
+                    <h2>Building a Strong Foundation in <span class="gradient-text">Cloud & DevOps</span></h2>
+                    <p>
+                        My journey, technical interests and professional goals.
+                    </p>
+                </div>
+
+                <div class="about-grid">
+
+                    <div class="about-content reveal">
+
+                        <h3>Hello! I'm Raj Kushwaha.</h3>
+
+                        <p>
+                            I am an aspiring DevOps Engineer with a Bachelor
+                            of Engineering in Computer Science. I have
+                            developed practical knowledge of Linux, AWS,
+                            Git, Jenkins, Docker, Kubernetes and CI/CD
+                            workflows through training and hands-on projects.
+                        </p>
+
+                        <p>
+                            I enjoy understanding how applications are built,
+                            deployed and monitored. I am continuously improving
+                            my skills in cloud infrastructure, automation,
+                            troubleshooting and reliable deployments.
+                        </p>
+
+                        <p>
+                            Alongside DevOps, I work with HTML, CSS and
+                            JavaScript to build clean, responsive websites
+                            for personal portfolios and small businesses.
+                        </p>
+
+                        <div class="about-actions">
+                            <a href="#contact" class="btn btn-primary">
+                                Let's Connect
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="about-highlights reveal">
+
+                        <div class="highlight-card">
+                            <div class="highlight-icon">
+                                <i class="fa-solid fa-cloud"></i>
+                            </div>
+
+                            <div>
+                                <h4>Cloud Infrastructure</h4>
+                                <p>AWS services and cloud fundamentals</p>
+                            </div>
+                        </div>
+
+                        <div class="highlight-card">
+                            <div class="highlight-icon">
+                                <i class="fa-solid fa-code-branch"></i>
+                            </div>
+
+                            <div>
+                                <h4>CI/CD Automation</h4>
+                                <p>Build, test and deployment workflows</p>
+                            </div>
+                        </div>
+
+                        <div class="highlight-card">
+                            <div class="highlight-icon">
+                                <i class="fa-brands fa-docker"></i>
+                            </div>
+
+                            <div>
+                                <h4>Containerization</h4>
+                                <p>Docker and Kubernetes fundamentals</p>
+                            </div>
+                        </div>
+
+                        <div class="highlight-card">
+                            <div class="highlight-icon">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+
+                            <div>
+                                <h4>Web Development</h4>
+                                <p>Responsive websites and landing pages</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Skills Section -->
+        <section class="section section-alt" id="skills">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="section-label">TECHNICAL SKILLS</span>
+                    <h2>Technologies I <span class="gradient-text">Work With</span></h2>
+                    <p>
+                        Tools and technologies I have studied and practised
+                        through training and projects.
+                    </p>
+                </div>
+
+                <div class="skills-grid">
+
+                    <article class="skill-card reveal">
+                        <div class="skill-card-heading">
+                            <i class="fa-brands fa-aws"></i>
+                            <h3>Cloud & AWS</h3>
+                        </div>
+
+                        <div class="skill-tags">
+                            <span>AWS EC2</span>
+                            <span>S3</span>
+                            <span>IAM</span>
+                            <span>VPC</span>
+                            <span>RDS</span>
+                            <span>Lambda</span>
+                            <span>CloudWatch</span>
+                            <span>ECR</span>
+                            <span>EKS</span>
+                        </div>
+                    </article>
+
+
+                    <article class="skill-card reveal">
+                        <div class="skill-card-heading">
+                            <i class="fa-solid fa-gears"></i>
+                            <h3>CI/CD & Build Tools</h3>
+                        </div>
+
+                        <div class="skill-tags">
+                            <span>Jenkins</span>
+                            <span>GitHub Actions</span>
+                            <span>Git</span>
+                            <span>GitHub</span>
+                            <span>Maven</span>
+                            <span>Nexus</span>
+                            <span>SonarQube</span>
+                        </div>
+                    </article>
+
+
+                    <article class="skill-card reveal">
+                        <div class="skill-card-heading">
+                            <i class="fa-brands fa-docker"></i>
+                            <h3>Containers</h3>
+                        </div>
+
+                        <div class="skill-tags">
+                            <span>Docker</span>
+                            <span>Kubernetes</span>
+                            <span>Pods</span>
+                            <span>Deployments</span>
+                            <span>Services</span>
+                            <span>ConfigMaps</span>
+                            <span>Secrets</span>
+                            <span>Helm Fundamentals</span>
+                        </div>
+                    </article>
+
+
+                    <article class="skill-card reveal">
+                        <div class="skill-card-heading">
+                            <i class="fa-brands fa-linux"></i>
+                            <h3>Operating Systems</h3>
+                        </div>
+
+                        <div class="skill-tags">
+                            <span>Linux</span>
+                            <span>Ubuntu</span>
+                            <span>Amazon Linux</span>
+                            <span>Windows</span>
+                            <span>Bash</span>
+                            <span>Shell Scripting</span>
+                            <span>Permissions</span>
+                            <span>Logs</span>
+                        </div>
+                    </article>
+
+
+                    <article class="skill-card reveal">
+                        <div class="skill-card-heading">
+                            <i class="fa-solid fa-code"></i>
+                            <h3>Infrastructure & Programming</h3>
+                        </div>
+
+                        <div class="skill-tags">
+                            <span>Terraform</span>
+                            <span>Ansible</span>
+                            <span>Python Fundamentals</span>
+                            <span>YAML</span>
+                            <span>JSON</span>
+                            <span>SQL</span>
+                        </div>
+                    </article>
+
+
+                    <article class="skill-card reveal">
+                        <div class="skill-card-heading">
+                            <i class="fa-solid fa-globe"></i>
+                            <h3>Web & Networking</h3>
+                        </div>
+
+                        <div class="skill-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Nginx</span>
+                            <span>Tomcat</span>
+                            <span>DNS</span>
+                            <span>HTTP/HTTPS</span>
+                            <span>SSH</span>
+                            <span>TCP/IP</span>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Experience and Education -->
+        <section class="section" id="experience">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="section-label">MY JOURNEY</span>
+                    <h2>Experience & <span class="gradient-text">Education</span></h2>
+                    <p>
+                        My learning journey in cloud computing and DevOps.
+                    </p>
+                </div>
+
+                <div class="timeline">
+
+                    <article class="timeline-item reveal">
+
+                        <div class="timeline-marker">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+
+                        <div class="timeline-card">
+
+                            <span class="timeline-date">
+                                Sep 2024 – Feb 2025
+                            </span>
+
+                            <h3>DevOps Trainee</h3>
+
+                            <h4>Rooman Technologies</h4>
+
+                            <p>
+                                Participated in DevOps training and practical
+                                exercises covering Linux administration,
+                                Git/GitHub, Jenkins, Docker and Kubernetes
+                                fundamentals.
+                            </p>
+
+                            <ul>
+                                <li>Practised Linux commands, permissions and troubleshooting.</li>
+                                <li>Learned source control and CI/CD pipeline concepts.</li>
+                                <li>Explored containerization and cloud fundamentals.</li>
+                            </ul>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="timeline-item reveal">
+
+                        <div class="timeline-marker">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+
+                        <div class="timeline-card">
+
+                            <span class="timeline-date">
+                                Jul 2025 – Feb 2026
+                            </span>
+
+                            <h3>DevOps & Cloud Training</h3>
+
+                            <h4>JSpiders, Bengaluru</h4>
+
+                            <p>
+                                Completed practical training in AWS Cloud,
+                                Linux, Git, Jenkins, Docker, Kubernetes and
+                                infrastructure automation fundamentals.
+                            </p>
+
+                            <ul>
+                                <li>Practised AWS EC2, VPC, networking and security groups.</li>
+                                <li>Worked with CI/CD, build tools and container workflows in training exercises.</li>
+                                <li>Studied Terraform, Ansible and deployment troubleshooting.</li>
+                            </ul>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="timeline-item reveal">
+
+                        <div class="timeline-marker">
+                            <i class="fa-solid fa-university"></i>
+                        </div>
+
+                        <div class="timeline-card">
+
+                            <span class="timeline-date">
+                                Graduated in 2025
+                            </span>
+
+                            <h3>Bachelor of Engineering — Computer Science</h3>
+
+                            <h4>ACS College of Engineering, Bengaluru</h4>
+
+                            <p>
+                                Visvesvaraya Technological University (VTU)
+                            </p>
+
+                            <div class="education-badge">
+                                CGPA: 6.66
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Projects Section -->
+        <section class="section section-alt" id="projects">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="section-label">PORTFOLIO</span>
+                    <h2>Featured <span class="gradient-text">Projects</span></h2>
+                    <p>
+                        Practical projects demonstrating my understanding
+                        of cloud infrastructure, deployment and automation.
+                    </p>
+                </div>
+
+
+                <div class="project-filters reveal">
+
+                    <button class="filter-btn active" data-filter="all">
+                        All Projects
+                    </button>
+
+                    <button class="filter-btn" data-filter="aws">
+                        AWS Cloud
+                    </button>
+
+                    <button class="filter-btn" data-filter="cicd">
+                        CI/CD
+                    </button>
+
+                    <button class="filter-btn" data-filter="containers">
+                        Docker & Kubernetes
+                    </button>
+
+                    <button class="filter-btn" data-filter="web">
+                        Web Development
+                    </button>
+
+                </div>
+
+
+                <div class="projects-grid">
+
+                    <!-- Project 1 -->
+                    <article class="project-card reveal" data-category="cicd containers web">
+
+                        <div class="project-visual visual-zomato">
+                            <div class="project-visual-icon">
+                                <i class="fa-solid fa-utensils"></i>
+                            </div>
+
+                            <span class="project-type">CI/CD Deployment</span>
+                        </div>
+
+                        <div class="project-content">
+
+                            <div class="project-meta">
+                                <span>Project 01</span>
+                                <span class="project-status">
+                                    Hands-on Project
+                                </span>
+                            </div>
+
+                            <h3>Food Delivery Application Deployment</h3>
+
+                            <p>
+                                Practised deploying a web application using
+                                GitHub, Jenkins, Docker and web server
+                                configuration, with attention to build
+                                automation and deployment troubleshooting.
+                            </p>
+
+                            <div class="project-tech">
+                                <span>AWS EC2</span>
+                                <span>Jenkins</span>
+                                <span>GitHub</span>
+                                <span>Docker</span>
+                                <span>Nginx</span>
+                            </div>
+
+                            <a
+                                href="https://github.com/rajkushwaha01"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="project-link"
+                            >
+                                View GitHub
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+
+                        </div>
+                    </article>
+
+
+                    <!-- Project 2 -->
+                    <article class="project-card reveal" data-category="aws containers cicd">
+
+                        <div class="project-visual visual-three-tier">
+                            <div class="project-visual-icon">
+                                <i class="fa-solid fa-layer-group"></i>
+                            </div>
+
+                            <span class="project-type">Cloud Architecture</span>
+                        </div>
+
+                        <div class="project-content">
+
+                            <div class="project-meta">
+                                <span>Project 02</span>
+                                <span class="project-status">
+                                    Learning Project
+                                </span>
+                            </div>
+
+                            <h3>Three-Tier Application Deployment</h3>
+
+                            <p>
+                                Explored frontend, backend and database
+                                architecture, container deployments,
+                                Kubernetes resources and CI/CD workflow
+                                configuration.
+                            </p>
+
+                            <div class="project-tech">
+                                <span>AWS</span>
+                                <span>Docker</span>
+                                <span>Kubernetes</span>
+                                <span>Jenkins</span>
+                                <span>GitHub</span>
+                            </div>
+
+                            <a
+                                href="https://github.com/rajkushwaha01"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="project-link"
+                            >
+                                View GitHub
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+
+                        </div>
+                    </article>
+
+
+                    <!-- Project 3 -->
+                    <article class="project-card reveal" data-category="aws cicd">
+
+                        <div class="project-visual visual-ecr">
+                            <div class="project-visual-icon">
+                                <i class="fa-brands fa-docker"></i>
+                            </div>
+
+                            <span class="project-type">Container Registry</span>
+                        </div>
+
+                        <div class="project-content">
+
+                            <div class="project-meta">
+                                <span>Project 03</span>
+                                <span class="project-status status-progress">
+                                    In Progress
+                                </span>
+                            </div>
+
+                            <h3>GitHub Actions to Amazon ECR</h3>
+
+                            <p>
+                                Configuring a workflow to build Docker
+                                images and publish them to a private
+                                Amazon ECR repository using AWS IAM
+                                permissions and GitHub Actions.
+                            </p>
+
+                            <div class="project-tech">
+                                <span>GitHub Actions</span>
+                                <span>AWS ECR</span>
+                                <span>IAM</span>
+                                <span>Docker</span>
+                            </div>
+
+                            <a
+                                href="https://github.com/rajkushwaha01"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="project-link"
+                            >
+                                View GitHub
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+
+                        </div>
+                    </article>
+
+
+                    <!-- Project 4 -->
+                    <article class="project-card reveal" data-category="aws">
+
+                        <div class="project-visual visual-monitoring">
+                            <div class="project-visual-icon">
+                                <i class="fa-solid fa-chart-line"></i>
+                            </div>
+
+                            <span class="project-type">Cloud Monitoring</span>
+                        </div>
+
+                        <div class="project-content">
+
+                            <div class="project-meta">
+                                <span>Project 04</span>
+                                <span class="project-status">
+                                    Monitoring Project
+                                </span>
+                            </div>
+
+                            <h3>AWS CloudWatch Monitoring</h3>
+
+                            <p>
+                                Explore application and EC2 monitoring
+                                through CloudWatch metrics, log collection,
+                                dashboards and alarm configuration for
+                                improved operational visibility.
+                            </p>
+
+                            <div class="project-tech">
+                                <span>AWS EC2</span>
+                                <span>CloudWatch</span>
+                                <span>Metrics</span>
+                                <span>Logs</span>
+                                <span>Alarms</span>
+                            </div>
+
+                            <a
+                                href="https://github.com/rajkushwaha01"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="project-link"
+                            >
+                                View GitHub
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+
+                        </div>
+                    </article>
+
+
+                    <!-- Project 5 -->
+                    <article class="project-card reveal" data-category="web">
+
+                        <div class="project-visual visual-portfolio">
+                            <div class="project-visual-icon">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+
+                            <span class="project-type">Website Development</span>
+                        </div>
+
+                        <div class="project-content">
+
+                            <div class="project-meta">
+                                <span>Project 05</span>
+                                <span class="project-status">
+                                    Portfolio Website
+                                </span>
+                            </div>
+
+                            <h3>Personal Portfolio Website</h3>
+
+                            <p>
+                                A responsive personal website featuring
+                                technical skills, projects, professional
+                                information and a client enquiry form.
+                            </p>
+
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>Responsive UI</span>
+                            </div>
+
+                            <a
+                                href="https://github.com/rajkushwaha01"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="project-link"
+                            >
+                                View GitHub
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+
+                        </div>
+                    </article>
+
+
+                    <!-- Project 6 -->
+                    <article class="project-card reveal" data-category="aws cicd">
+
+                        <div class="project-visual visual-infrastructure">
+                            <div class="project-visual-icon">
+                                <i class="fa-solid fa-server"></i>
+                            </div>
+
+                            <span class="project-type">Cloud Infrastructure</span>
+                        </div>
+
+                        <div class="project-content">
+
+                            <div class="project-meta">
+                                <span>Project 06</span>
+                                <span class="project-status">
+                                    Practice Project
+                                </span>
+                            </div>
+
+                            <h3>AWS EC2 Web Server Setup</h3>
+
+                            <p>
+                                Practised launching cloud instances,
+                                configuring network access, connecting
+                                over SSH and preparing a Linux web server
+                                using Nginx.
+                            </p>
+
+                            <div class="project-tech">
+                                <span>AWS EC2</span>
+                                <span>Linux</span>
+                                <span>Nginx</span>
+                                <span>SSH</span>
+                                <span>Security Groups</span>
+                            </div>
+
+                            <a
+                                href="https://github.com/rajkushwaha01"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="project-link"
+                            >
+                                View GitHub
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="projects-footer reveal">
+                    <a
+                        href="https://github.com/rajkushwaha01"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-secondary"
+                    >
+                        Explore All GitHub Repositories
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Services Section -->
+        <section class="section" id="services">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="section-label">WHAT I CAN HELP WITH</span>
+                    <h2>My <span class="gradient-text">Services</span></h2>
+                    <p>
+                        Practical technology services for individuals,
+                        startups and small businesses.
+                    </p>
+                </div>
+
+                <div class="services-grid">
+
+                    <article class="service-card reveal">
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-cloud"></i>
+                        </div>
+
+                        <h3>AWS Cloud Setup</h3>
+
+                        <p>
+                            Assistance with basic AWS infrastructure,
+                            EC2 instances, security groups and cloud
+                            environment configuration.
+                        </p>
+
+                        <a href="#contact" class="service-link">
+                            Discuss Your Project
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </article>
+
+
+                    <article class="service-card reveal">
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-gears"></i>
+                        </div>
+
+                        <h3>CI/CD Pipeline</h3>
+
+                        <p>
+                            Assistance with GitHub, Jenkins and GitHub
+                            Actions workflows for build automation and
+                            deployment practice.
+                        </p>
+
+                        <a href="#contact" class="service-link">
+                            Discuss Your Project
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </article>
+
+
+                    <article class="service-card reveal">
+
+                        <div class="service-icon">
+                            <i class="fa-brands fa-docker"></i>
+                        </div>
+
+                        <h3>Docker & Containers</h3>
+
+                        <p>
+                            Dockerfile creation, image building,
+                            container troubleshooting and basic
+                            Kubernetes deployment assistance.
+                        </p>
+
+                        <a href="#contact" class="service-link">
+                            Discuss Your Project
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </article>
+
+
+                    <article class="service-card reveal">
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+
+                        <h3>Website Development</h3>
+
+                        <p>
+                            Responsive portfolios, landing pages,
+                            personal websites and simple business
+                            websites using modern frontend technologies.
+                        </p>
+
+                        <a href="#contact" class="service-link">
+                            Discuss Your Project
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </article>
+
+
+                    <article class="service-card reveal">
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+
+                        <h3>Cloud Monitoring</h3>
+
+                        <p>
+                            Basic CloudWatch metrics, log monitoring,
+                            dashboards and alarm setup based on
+                            project requirements.
+                        </p>
+
+                        <a href="#contact" class="service-link">
+                            Discuss Your Project
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </article>
+
+
+                    <article class="service-card reveal">
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </div>
+
+                        <h3>Linux & Deployment Support</h3>
+
+                        <p>
+                            Basic Linux troubleshooting, web server
+                            configuration, application deployment
+                            and log investigation.
+                        </p>
+
+                        <a href="#contact" class="service-link">
+                            Discuss Your Project
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </article>
+
+                </div>
+
+                <p class="service-note">
+                    Services are provided according to project scope,
+                    availability and technical requirements.
+                </p>
+
+            </div>
+        </section>
+
+
+        <!-- Certificates Section -->
+        <section class="section section-alt" id="certificates">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="section-label">LEARNING & DEVELOPMENT</span>
+                    <h2>Training & <span class="gradient-text">Certificates</span></h2>
+                    <p>
+                        Technical learning and professional development.
+                    </p>
+                </div>
+
+                <div class="certificates-grid">
+
+                    <article class="certificate-card reveal">
+                        <div class="certificate-icon">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+
+                        <div>
+                            <h3>DevOps Training</h3>
+                            <p>Rooman Technologies</p>
+                            <a href="#contact" class="certificate-link">
+                                Request Details
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+
+                    <article class="certificate-card reveal">
+                        <div class="certificate-icon">
+                            <i class="fa-solid fa-network-wired"></i>
+                        </div>
+
+                        <div>
+                            <h3>Networking Basics</h3>
+                            <p>Cisco Networking Academy</p>
+                            <a href="#contact" class="certificate-link">
+                                Request Details
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+
+                    <article class="certificate-card reveal">
+                        <div class="certificate-icon">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+
+                        <div>
+                            <h3>DevOps & Cloud Training</h3>
+                            <p>JSpiders, Bengaluru</p>
+                            <a href="#contact" class="certificate-link">
+                                Request Details
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+
+                <p class="service-note">
+                    Add your actual certificate URLs when available.
+                </p>
+
+            </div>
+        </section>
+
+
+        <!-- Contact / Enquiry Section -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="section-label">GET IN TOUCH</span>
+                    <h2>Let's Build Something <span class="gradient-text">Together</span></h2>
+                    <p>
+                        Have a website, cloud or automation project in mind?
+                        Send me your requirements.
+                    </p>
+                </div>
+
+
+                <div class="contact-grid">
+
+                    <div class="contact-information reveal">
+
+                        <h3>Let's talk about your project.</h3>
+
+                        <p>
+                            Fill out the enquiry form or contact me directly
+                            using the details below.
+                        </p>
+
+                        <a
+                            href="mailto:rajkush018a@gmail.com"
+                            class="contact-method"
+                        >
+                            <span class="contact-method-icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </span>
+
+                            <span>
+                                <small>Email Address</small>
+                                <strong>rajkush018a@gmail.com</strong>
+                            </span>
+                        </a>
+
+
+                        <a
+                            href="tel:+919508803490"
+                            class="contact-method"
+                        >
+                            <span class="contact-method-icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </span>
+
+                            <span>
+                                <small>Phone Number</small>
+                                <strong>+91 95088 03490</strong>
+                            </span>
+                        </a>
+
+
+                        <div class="contact-method">
+                            <span class="contact-method-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </span>
+
+                            <span>
+                                <small>Location</small>
+                                <strong>Gurugram, India</strong>
+                            </span>
+                        </div>
+
+
+                        <div class="contact-socials">
+
+                            <a
+                                href="https://github.com/rajkushwaha01"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="GitHub"
+                            >
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+
+                            <a
+                                href="https://www.linkedin.com/in/REPLACE-WITH-YOUR-LINKEDIN/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="LinkedIn"
+                            >
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <form id="enquiryForm" class="enquiry-form reveal">
+
+                        <h3>Send an Enquiry</h3>
+
+                        <p class="form-description">
+                            Fields marked with * are required.
+                        </p>
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    placeholder="Enter your name"
+                                    minlength="2"
+                                    maxlength="100"
+                                    autocomplete="name"
+                                    required
+                                >
+                            </div>
+
+
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="you@example.com"
+                                    maxlength="254"
+                                    autocomplete="email"
+                                    required
+                                >
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    placeholder="+91 XXXXX XXXXX"
+                                    maxlength="20"
+                                    autocomplete="tel"
+                                >
+                            </div>
+
+
+                            <div class="form-group">
+                                <label for="service">Service Required *</label>
+
+                                <select id="service" name="service" required>
+                                    <option value="">Select a service</option>
+                                    <option value="Website Development">
+                                        Website Development
+                                    </option>
+                                    <option value="AWS Cloud Setup">
+                                        AWS Cloud Setup
+                                    </option>
+                                    <option value="DevOps and CI/CD">
+                                        DevOps & CI/CD
+                                    </option>
+                                    <option value="Docker and Kubernetes">
+                                        Docker & Kubernetes
+                                    </option>
+                                    <option value="Cloud Monitoring">
+                                        Cloud Monitoring
+                                    </option>
+                                    <option value="Linux and Deployment Support">
+                                        Linux & Deployment Support
+                                    </option>
+                                    <option value="Other">
+                                        Other
+                                    </option>
+                                </select>
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="budget">Estimated Budget</label>
+
+                            <select id="budget" name="budget">
+                                <option value="">Select your budget</option>
+                                <option value="Below ₹5,000">
+                                    Below ₹5,000
+                                </option>
+                                <option value="₹5,000 – ₹10,000">
+                                    ₹5,000 – ₹10,000
+                                </option>
+                                <option value="₹10,000 – ₹25,000">
+                                    ₹10,000 – ₹25,000
+                                </option>
+                                <option value="₹25,000+">
+                                    ₹25,000+
+                                </option>
+                                <option value="Not decided">
+                                    Not decided yet
+                                </option>
+                            </select>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="message">Project Details *</label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="5"
+                                minlength="10"
+                                maxlength="3000"
+                                placeholder="Describe your project requirements..."
+                                required
+                            ></textarea>
+                        </div>
+
+
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <span>Submit Enquiry</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+
+                        <p
+                            id="formStatus"
+                            class="form-status"
+                            aria-live="polite"
+                            role="status"
+                        ></p>
+
+                        <p class="form-privacy">
+                            Your information is used to respond to your enquiry.
+                        </p>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+
+            <a href="#home" class="logo footer-logo">
+                <span class="logo-bracket">&lt;</span>
+                Raj<span class="accent-text">Kushwaha</span>
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+
+            <p>
+                Building skills. Automating workflows. Creating solutions.
+            </p>
+
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>
+                    &copy; <span id="currentYear"></span> Raj Kushwaha.
+                    All rights reserved.
+                </p>
+
+                <a href="#home" class="back-to-top" aria-label="Back to top">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </a>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <!-- Toast notification -->
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
