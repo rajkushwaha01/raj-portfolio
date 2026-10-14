@@ -226,95 +226,86 @@ function showToast(message) {
 
 
 /* =========================================
-   8. ENQUIRY FORM VALIDATION
+   8. ENQUIRY FORM - FORMSPREE
 ========================================= */
 
 const enquiryForm = document.getElementById("enquiryForm");
 const formStatus = document.getElementById("formStatus");
+const submitBtn = document.getElementById("submitBtn");
 
 if (enquiryForm && formStatus) {
-    enquiryForm.addEventListener("submit", function (event) {
-        event.preventDefault();
 
-        formStatus.textContent = "";
-        formStatus.className = "form-status";
+    enquiryForm.addEventListener("submit", async function (event) {
+
+        event.preventDefault();
 
         if (!enquiryForm.reportValidity()) {
             return;
         }
 
-        const formData = new FormData(enquiryForm);
+        formStatus.textContent = "";
+        formStatus.className = "form-status";
 
-        const name = String(formData.get("name") || "").trim();
-        const email = String(formData.get("email") || "").trim();
-        const phone = String(formData.get("phone") || "").trim();
-        const service = String(formData.get("service") || "").trim();
-        const budget = String(formData.get("budget") || "Not specified").trim();
-        const message = String(formData.get("message") || "").trim();
+        const originalButtonHTML = submitBtn
+            ? submitBtn.innerHTML
+            : "";
 
-        if (name.length < 2) {
-            showFormError("Please enter your full name.");
-            return;
+        if (submitBtn) {
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = "<span>Sending...</span>";
         }
 
-        if (message.length < 10) {
-            showFormError(
-                "Please provide at least 10 characters describing your project."
-            );
-            return;
+        try {
+
+            const response = await fetch(enquiryForm.action, {
+                method: "POST",
+                body: new FormData(enquiryForm),
+                headers: {
+                    Accept: "application/json"
+                }
+            });
+
+            const result = await response.json();
+
+            if (!response.ok) {
+                throw new Error(
+                    result.errors
+                        ? result.errors.map(error => error.message).join(", ")
+                        : "Unable to submit your enquiry."
+                );
+            }
+
+            formStatus.textContent =
+                "Thank you! Your enquiry has been submitted successfully.";
+
+            formStatus.classList.add("success");
+
+            enquiryForm.reset();
+
+            if (typeof showToast === "function") {
+                showToast("Your enquiry was submitted successfully!");
+            }
+
+        } catch (error) {
+
+            console.error("Form submission error:", error);
+
+            formStatus.textContent =
+                "Sorry, your enquiry could not be submitted. Please try again or email rajkush018a@gmail.com directly.";
+
+            formStatus.classList.add("error");
+
+        } finally {
+
+            if (submitBtn) {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalButtonHTML;
+            }
+
         }
 
-        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-        if (!emailPattern.test(email)) {
-            showFormError("Please enter a valid email address.");
-            return;
-        }
-
-        const subject = `Portfolio Enquiry - ${name}`;
-
-        const body = [
-            "NEW PORTFOLIO ENQUIRY",
-            "",
-            `Name: ${name}`,
-            `Email: ${email}`,
-            `Phone: ${phone || "Not provided"}`,
-            `Service: ${service}`,
-            `Estimated Budget: ${budget}`,
-            "",
-            "PROJECT DETAILS:",
-            message
-        ].join("\n");
-
-        const mailtoURL =
-            "mailto:rajkush018a@gmail.com" +
-            "?subject=" + encodeURIComponent(subject) +
-            "&body=" + encodeURIComponent(body);
-
-        formStatus.textContent =
-            "Your email application will open with the enquiry details. Send the email to complete your enquiry.";
-
-        formStatus.classList.add("success");
-
-        showToast(
-            "Enquiry prepared. Please send the email from your email application."
-        );
-
-        /*
-         * This opens an email draft.
-         * It does NOT automatically send or store the enquiry.
-         */
-        window.location.href = mailtoURL;
     });
-}
 
-function showFormError(message) {
-    if (!formStatus) return;
-
-    formStatus.textContent = message;
-    formStatus.className = "form-status error";
-
-    showToast(message);
 }
 
 

@@ -45,7 +45,7 @@
 
             <a href="#home" class="logo">
                 <span class="logo-bracket">&lt;</span>
-                Raj<span class="accent-text">Kumar</span>
+                Raj<span class="accent-text">Kushwaha</span>
                 <span class="logo-bracket">/&gt;</span>
             </a>
 
@@ -146,7 +146,7 @@
 
                         <!-- Replace this with your exact LinkedIn profile URL -->
                         <a
-                            href="https://www.linkedin.com/in/raj-kushwahaa/"
+                            href="https://www.linkedin.com/in/raj-kushwahaa"
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="LinkedIn"
@@ -1198,10 +1198,6 @@
 
                 </div>
 
-                <p class="service-note">
-                    Add your actual certificate URLs when available.
-                </p>
-
             </div>
         </section>
 
@@ -1285,7 +1281,7 @@
                             </a>
 
                             <a
-                                href="https://www.linkedin.com/in/REPLACE-WITH-YOUR-LINKEDIN/"
+                                href="https://www.linkedin.com/in/raj-kushwahaa"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="LinkedIn"
@@ -1298,153 +1294,156 @@
                     </div>
 
 
-                    <form id="enquiryForm" class="enquiry-form reveal">
+                <!-- Enquiry Form: Formspree -->
+<form
+    id="enquiryForm"
+    class="enquiry-form reveal"
+    action="https://formspree.io/f/xjygpkey"
+    method="POST"
+>
 
-                        <h3>Send an Enquiry</h3>
+    <h3>Send an Enquiry</h3>
 
-                        <p class="form-description">
-                            Fields marked with * are required.
-                        </p>
+    <p class="form-description">
+        Tell me about your project. Fields marked * are required.
+    </p>
 
-                        <div class="form-row">
+    <input
+        type="hidden"
+        name="_subject"
+        value="New Portfolio Enquiry - Raj Kushwaha"
+    >
 
-                            <div class="form-group">
-                                <label for="name">Full Name *</label>
+    <div class="form-row">
 
-                                <input
-                                    type="text"
-                                    id="name"
-                                    name="name"
-                                    placeholder="Enter your name"
-                                    minlength="2"
-                                    maxlength="100"
-                                    autocomplete="name"
-                                    required
-                                >
-                            </div>
+        <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your full name"
+                minlength="2"
+                maxlength="100"
+                autocomplete="name"
+                required
+            >
+        </div>
 
+        <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="you@example.com"
+                maxlength="254"
+                autocomplete="email"
+                required
+            >
+        </div>
 
-                            <div class="form-group">
-                                <label for="email">Email Address *</label>
+    </div>
 
-                                <input
-                                    type="email"
-                                    id="email"
-                                    name="email"
-                                    placeholder="you@example.com"
-                                    maxlength="254"
-                                    autocomplete="email"
-                                    required
-                                >
-                            </div>
+    <div class="form-row">
 
-                        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="+91 XXXXX XXXXX"
+                maxlength="20"
+                autocomplete="tel"
+            >
+        </div>
 
+        <div class="form-group">
+            <label for="service">Service Required *</label>
 
-                        <div class="form-row">
+            <select id="service" name="service" required>
+                <option value="" disabled selected>
+                    Select a service
+                </option>
+                <option value="Website Development">
+                    Website Development
+                </option>
+                <option value="AWS Cloud Setup">
+                    AWS Cloud Setup
+                </option>
+                <option value="DevOps and CI/CD">
+                    DevOps &amp; CI/CD
+                </option>
+                <option value="Docker and Kubernetes">
+                    Docker &amp; Kubernetes
+                </option>
+                <option value="Cloud Monitoring">
+                    Cloud Monitoring
+                </option>
+                <option value="Linux and Deployment Support">
+                    Linux &amp; Deployment Support
+                </option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
 
-                            <div class="form-group">
-                                <label for="phone">Phone Number</label>
+    </div>
 
-                                <input
-                                    type="tel"
-                                    id="phone"
-                                    name="phone"
-                                    placeholder="+91 XXXXX XXXXX"
-                                    maxlength="20"
-                                    autocomplete="tel"
-                                >
-                            </div>
+    <div class="form-group">
+        <label for="budget">Estimated Budget</label>
 
+        <select id="budget" name="budget">
+            <option value="">Select your budget</option>
+            <option value="Below ₹5,000">Below ₹5,000</option>
+            <option value="₹5,000 – ₹10,000">
+                ₹5,000 – ₹10,000
+            </option>
+            <option value="₹10,000 – ₹25,000">
+                ₹10,000 – ₹25,000
+            </option>
+            <option value="₹25,000+">₹25,000+</option>
+            <option value="Not decided yet">
+                Not decided yet
+            </option>
+        </select>
+    </div>
 
-                            <div class="form-group">
-                                <label for="service">Service Required *</label>
+    <div class="form-group">
+        <label for="message">Project Details *</label>
 
-                                <select id="service" name="service" required>
-                                    <option value="">Select a service</option>
-                                    <option value="Website Development">
-                                        Website Development
-                                    </option>
-                                    <option value="AWS Cloud Setup">
-                                        AWS Cloud Setup
-                                    </option>
-                                    <option value="DevOps and CI/CD">
-                                        DevOps & CI/CD
-                                    </option>
-                                    <option value="Docker and Kubernetes">
-                                        Docker & Kubernetes
-                                    </option>
-                                    <option value="Cloud Monitoring">
-                                        Cloud Monitoring
-                                    </option>
-                                    <option value="Linux and Deployment Support">
-                                        Linux & Deployment Support
-                                    </option>
-                                    <option value="Other">
-                                        Other
-                                    </option>
-                                </select>
-                            </div>
+        <textarea
+            id="message"
+            name="message"
+            rows="5"
+            minlength="10"
+            maxlength="3000"
+            placeholder="Describe your project requirements..."
+            required
+        ></textarea>
+    </div>
 
-                        </div>
+    <p
+        id="formStatus"
+        class="form-status"
+        aria-live="polite"
+        role="status"
+    ></p>
 
+    <button
+        type="submit"
+        id="submitBtn"
+        class="btn btn-primary submit-btn"
+    >
+        <span>Submit Enquiry</span>
+        <i class="fa-solid fa-paper-plane"></i>
+    </button>
 
-                        <div class="form-group">
-                            <label for="budget">Estimated Budget</label>
+    <p class="form-privacy">
+        Your information will be used to respond to your enquiry.
+    </p>
 
-                            <select id="budget" name="budget">
-                                <option value="">Select your budget</option>
-                                <option value="Below ₹5,000">
-                                    Below ₹5,000
-                                </option>
-                                <option value="₹5,000 – ₹10,000">
-                                    ₹5,000 – ₹10,000
-                                </option>
-                                <option value="₹10,000 – ₹25,000">
-                                    ₹10,000 – ₹25,000
-                                </option>
-                                <option value="₹25,000+">
-                                    ₹25,000+
-                                </option>
-                                <option value="Not decided">
-                                    Not decided yet
-                                </option>
-                            </select>
-                        </div>
-
-
-                        <div class="form-group">
-                            <label for="message">Project Details *</label>
-
-                            <textarea
-                                id="message"
-                                name="message"
-                                rows="5"
-                                minlength="10"
-                                maxlength="3000"
-                                placeholder="Describe your project requirements..."
-                                required
-                            ></textarea>
-                        </div>
-
-
-                        <button type="submit" class="btn btn-primary submit-btn">
-                            <span>Submit Enquiry</span>
-                            <i class="fa-solid fa-paper-plane"></i>
-                        </button>
-
-                        <p
-                            id="formStatus"
-                            class="form-status"
-                            aria-live="polite"
-                            role="status"
-                        ></p>
-
-                        <p class="form-privacy">
-                            Your information is used to respond to your enquiry.
-                        </p>
-
-                    </form>
+</form>    
 
                 </div>
 
@@ -1460,7 +1459,7 @@
 
             <a href="#home" class="logo footer-logo">
                 <span class="logo-bracket">&lt;</span>
-                Raj<span class="accent-text">Kushwaha</span>
+                <span class="accent-text"> </span>
                 <span class="logo-bracket">/&gt;</span>
             </a>
 
